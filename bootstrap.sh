@@ -17,5 +17,3 @@ if [ ! -f /var/log/uwsgi.log ]; then
     sudo touch /var/log/uwsgi.log
 fi
 sudo chmod 666 /var/log/uwsgi.log
-sudo service nginx restart
-uwsgi --ini /vagrant/leagueoftrivia/leagueoftrivia_uwsgi.ini

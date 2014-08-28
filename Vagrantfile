@@ -38,6 +38,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Provision with basic shell script
   config.vm.provision :shell, path: "bootstrap.sh"
+  config.vm.provision :shell, path: "startup.sh", run: "always"
 
   # Share an additional folder to the guest VM. The first argument is
   # the path on the host to the actual folder. The second argument is
